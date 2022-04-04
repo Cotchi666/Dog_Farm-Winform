@@ -1,0 +1,15 @@
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Dashboard.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Dogs.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Health.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Breed.resources
