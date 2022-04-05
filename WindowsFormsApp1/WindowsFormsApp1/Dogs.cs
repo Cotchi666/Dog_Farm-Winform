@@ -19,21 +19,13 @@ namespace WindowsFormsApp1
             InitializeComponent();
             showListDog();
         }
+        #region khai bao bien 
         int age = 0;
         int key = 0;
         SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-SCBOTSE\SQLEXPRESS;Initial Catalog=QLGC;Integrated Security=True");
+        #endregion
 
-        private void showListDog()
-        {
-            conn.Open();
-            string Query = "select * from Dog ";
-            SqlDataAdapter adapter = new SqlDataAdapter(Query, conn);
-            SqlCommandBuilder cmd = new SqlCommandBuilder(adapter);
-            var ds = new DataSet();
-            adapter.Fill(ds);
-            DogDGView.DataSource = ds.Tables[0];
-            conn.Close();
-        }
+       
         private void button1_Click(object sender, EventArgs e)
         {
             if(DogNameTxt.Text == ""|| ColorTxt.Text == ""|| BreedTxt.Text == ""|| WeightTxt.Text == ""|| AgeTxt.Text == "")
@@ -60,7 +52,7 @@ namespace WindowsFormsApp1
                 }
             }
         }
-
+        #region cac phuoc thuc chuyen form
         private void label8_Click(object sender, EventArgs e)
         {
             Dogs dogs = new Dogs();
@@ -84,6 +76,34 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
+        #endregion
+        #region cac phuoc thuc 
+        private void clearTxt()
+        {
+
+            DogNameTxt.Text = "";
+            ColorTxt.Text = "";
+            BreedTxt.Text = "";
+            WeightTxt.Text = "";
+            AgeTxt.Text = "";
+            key = 0;
+
+        }
+        private void showListDog()
+        {
+            conn.Open();
+            string Query = "select * from Dog ";
+            SqlDataAdapter adapter = new SqlDataAdapter(Query, conn);
+            SqlCommandBuilder cmd = new SqlCommandBuilder(adapter);
+            var ds = new DataSet();
+            adapter.Fill(ds);
+            DogDGView.DataSource = ds.Tables[0];
+            conn.Close();
+        }
+        #endregion
+        #region cac su kien click
+
+        #endregion
         private void DOBTxt_ValueChanged(object sender, EventArgs e)
         {
             age = Convert.ToInt32((DateTime.Today.Date-DOBTxt.Value.Date).Days)/365;
@@ -100,17 +120,7 @@ namespace WindowsFormsApp1
         {
             clearTxt();
         }
-        private void clearTxt()
-        {
-            
-                DogNameTxt.Text = "";
-                ColorTxt.Text = "";
-                BreedTxt.Text = "";
-                WeightTxt.Text = "";
-                AgeTxt.Text = "";
-            key = 0;
-            
-        }
+     
         private void DogDGView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
            

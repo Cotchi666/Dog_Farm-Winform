@@ -33,30 +33,30 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.VetTxt = new System.Windows.Forms.TextBox();
+            this.DogIdBox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.HealthGView = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.DiagTxt = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.DogNameTxt = new System.Windows.Forms.TextBox();
+            this.CostTxt = new System.Windows.Forms.TextBox();
+            this.EventTxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.DiaTxt = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -67,13 +67,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TreatTxt = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.ReportDate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HealthGView)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel7.SuspendLayout();
@@ -94,8 +94,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(61, 26);
             this.button4.TabIndex = 70;
-            this.button4.Text = "Update";
+            this.button4.Text = "Clear";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -108,6 +109,7 @@
             this.button3.TabIndex = 69;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -120,6 +122,7 @@
             this.button2.TabIndex = 68;
             this.button2.Text = "Edit";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -132,21 +135,23 @@
             this.button1.TabIndex = 67;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // VetTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(480, 164);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 66;
+            this.VetTxt.Location = new System.Drawing.Point(480, 164);
+            this.VetTxt.Name = "VetTxt";
+            this.VetTxt.Size = new System.Drawing.Size(100, 20);
+            this.VetTxt.TabIndex = 66;
             // 
-            // comboBox1
+            // DogIdBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(216, 89);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(108, 21);
-            this.comboBox1.TabIndex = 65;
+            this.DogIdBox.FormattingEnabled = true;
+            this.DogIdBox.Location = new System.Drawing.Point(216, 89);
+            this.DogIdBox.Name = "DogIdBox";
+            this.DogIdBox.Size = new System.Drawing.Size(108, 21);
+            this.DogIdBox.TabIndex = 65;
+            this.DogIdBox.SelectionChangeCommitted += new System.EventHandler(this.DogIdBox_SelectionChangeCommitted);
             // 
             // label7
             // 
@@ -208,14 +213,17 @@
             this.label8.Size = new System.Drawing.Size(52, 26);
             this.label8.TabIndex = 21;
             this.label8.Text = "Dog";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // dataGridView1
+            // HealthGView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(210, 308);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(502, 134);
-            this.dataGridView1.TabIndex = 62;
+            this.HealthGView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.HealthGView.Location = new System.Drawing.Point(210, 308);
+            this.HealthGView.Name = "HealthGView";
+            this.HealthGView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.HealthGView.Size = new System.Drawing.Size(502, 134);
+            this.HealthGView.TabIndex = 62;
+            this.HealthGView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HealthGView_CellContentClick);
             // 
             // panel4
             // 
@@ -247,6 +255,7 @@
             this.label9.Size = new System.Drawing.Size(75, 26);
             this.label9.TabIndex = 21;
             this.label9.Text = "Health";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -257,13 +266,14 @@
             this.label10.Size = new System.Drawing.Size(99, 26);
             this.label10.TabIndex = 21;
             this.label10.Text = "Breeding";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // textBox6
+            // DiagTxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(462, 91);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 61;
+            this.DiagTxt.Location = new System.Drawing.Point(462, 91);
+            this.DiagTxt.Name = "DiagTxt";
+            this.DiagTxt.Size = new System.Drawing.Size(100, 20);
+            this.DiagTxt.TabIndex = 61;
             // 
             // label12
             // 
@@ -294,26 +304,26 @@
             this.pictureBox6.TabIndex = 22;
             this.pictureBox6.TabStop = false;
             // 
-            // textBox5
+            // DogNameTxt
             // 
-            this.textBox5.Location = new System.Drawing.Point(340, 91);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 60;
+            this.DogNameTxt.Location = new System.Drawing.Point(340, 91);
+            this.DogNameTxt.Name = "DogNameTxt";
+            this.DogNameTxt.Size = new System.Drawing.Size(100, 20);
+            this.DogNameTxt.TabIndex = 60;
             // 
-            // textBox4
+            // CostTxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(341, 167);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 59;
+            this.CostTxt.Location = new System.Drawing.Point(341, 167);
+            this.CostTxt.Name = "CostTxt";
+            this.CostTxt.Size = new System.Drawing.Size(100, 20);
+            this.CostTxt.TabIndex = 59;
             // 
-            // textBox2
+            // EventTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(585, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 58;
+            this.EventTxt.Location = new System.Drawing.Point(585, 89);
+            this.EventTxt.Name = "EventTxt";
+            this.EventTxt.Size = new System.Drawing.Size(100, 20);
+            this.EventTxt.TabIndex = 58;
             // 
             // label6
             // 
@@ -342,14 +352,14 @@
             this.label4.TabIndex = 55;
             this.label4.Text = "Event";
             // 
-            // label3
+            // DiaTxt
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(479, 72);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 54;
-            this.label3.Text = "diagnostic";
+            this.DiaTxt.AutoSize = true;
+            this.DiaTxt.Location = new System.Drawing.Point(479, 72);
+            this.DiaTxt.Name = "DiaTxt";
+            this.DiaTxt.Size = new System.Drawing.Size(53, 13);
+            this.DiaTxt.TabIndex = 54;
+            this.DiaTxt.Text = "Diagnosis";
             // 
             // label1
             // 
@@ -449,20 +459,12 @@
             this.label14.TabIndex = 114;
             this.label14.Text = "Report Date";
             // 
-            // dateTimePicker2
+            // TreatTxt
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(603, 178);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(95, 20);
-            this.dateTimePicker2.TabIndex = 115;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(216, 172);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 117;
+            this.TreatTxt.Location = new System.Drawing.Point(216, 172);
+            this.TreatTxt.Name = "TreatTxt";
+            this.TreatTxt.Size = new System.Drawing.Size(100, 20);
+            this.TreatTxt.TabIndex = 117;
             // 
             // label15
             // 
@@ -473,32 +475,41 @@
             this.label15.TabIndex = 116;
             this.label15.Text = "Treatment";
             // 
+            // ReportDate
+            // 
+            this.ReportDate.CustomFormat = "yyyy-MM-dd";
+            this.ReportDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.ReportDate.Location = new System.Drawing.Point(595, 167);
+            this.ReportDate.Name = "ReportDate";
+            this.ReportDate.Size = new System.Drawing.Size(95, 20);
+            this.ReportDate.TabIndex = 115;
+            // 
             // Health
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 450);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.TreatTxt);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.ReportDate);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.VetTxt);
+            this.Controls.Add(this.DogIdBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.HealthGView);
+            this.Controls.Add(this.DiagTxt);
+            this.Controls.Add(this.DogNameTxt);
+            this.Controls.Add(this.CostTxt);
+            this.Controls.Add(this.EventTxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.DiaTxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -510,7 +521,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HealthGView)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -535,30 +546,30 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox VetTxt;
+        private System.Windows.Forms.ComboBox DogIdBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView HealthGView;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox DiagTxt;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox DogNameTxt;
+        private System.Windows.Forms.TextBox CostTxt;
+        private System.Windows.Forms.TextBox EventTxt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label DiaTxt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel6;
@@ -569,8 +580,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TreatTxt;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.DateTimePicker ReportDate;
     }
 }

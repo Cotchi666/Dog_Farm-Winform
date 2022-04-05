@@ -34,23 +34,23 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.RemarksTxt = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.DogAgeTxt = new System.Windows.Forms.TextBox();
+            this.BreedDateTxt = new System.Windows.Forms.DateTimePicker();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DateBornedTxt = new System.Windows.Forms.DateTimePicker();
+            this.DogIdbox = new System.Windows.Forms.ComboBox();
+            this.BreedGridView = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.DogNameTxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -61,8 +61,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
+            this.PregDateTxt = new System.Windows.Forms.DateTimePicker();
+            this.DateBorned = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -72,7 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BreedGridView)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
@@ -102,8 +102,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(61, 26);
             this.button4.TabIndex = 122;
-            this.button4.Text = "Update";
+            this.button4.Text = "Clear";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -116,6 +117,7 @@
             this.button3.TabIndex = 121;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -128,6 +130,7 @@
             this.button2.TabIndex = 120;
             this.button2.Text = "Edit";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -140,13 +143,14 @@
             this.button1.TabIndex = 119;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // RemarksTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(388, 194);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 118;
+            this.RemarksTxt.Location = new System.Drawing.Point(388, 194);
+            this.RemarksTxt.Name = "RemarksTxt";
+            this.RemarksTxt.Size = new System.Drawing.Size(100, 20);
+            this.RemarksTxt.TabIndex = 118;
             // 
             // label14
             // 
@@ -194,20 +198,21 @@
             this.panel1.Size = new System.Drawing.Size(537, 28);
             this.panel1.TabIndex = 100;
             // 
-            // textBox1
+            // DogAgeTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(543, 155);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 116;
+            this.DogAgeTxt.Location = new System.Drawing.Point(543, 155);
+            this.DogAgeTxt.Name = "DogAgeTxt";
+            this.DogAgeTxt.Size = new System.Drawing.Size(100, 20);
+            this.DogAgeTxt.TabIndex = 116;
             // 
-            // dateTimePicker3
+            // BreedDateTxt
             // 
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(266, 91);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(95, 20);
-            this.dateTimePicker3.TabIndex = 114;
+            this.BreedDateTxt.CustomFormat = "yyyy-MM-dd";
+            this.BreedDateTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.BreedDateTxt.Location = new System.Drawing.Point(266, 91);
+            this.BreedDateTxt.Name = "BreedDateTxt";
+            this.BreedDateTxt.Size = new System.Drawing.Size(95, 20);
+            this.BreedDateTxt.TabIndex = 114;
             // 
             // panel6
             // 
@@ -238,29 +243,31 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "Dog";
             // 
-            // dateTimePicker4
+            // DateBornedTxt
             // 
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(398, 155);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(98, 20);
-            this.dateTimePicker4.TabIndex = 115;
+            this.DateBornedTxt.CustomFormat = "yyyy-MM-dd";
+            this.DateBornedTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateBornedTxt.Location = new System.Drawing.Point(398, 155);
+            this.DateBornedTxt.Name = "DateBornedTxt";
+            this.DateBornedTxt.Size = new System.Drawing.Size(98, 20);
+            this.DateBornedTxt.TabIndex = 115;
             // 
-            // comboBox1
+            // DogIdbox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(400, 90);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(98, 21);
-            this.comboBox1.TabIndex = 112;
+            this.DogIdbox.FormattingEnabled = true;
+            this.DogIdbox.Location = new System.Drawing.Point(400, 90);
+            this.DogIdbox.Name = "DogIdbox";
+            this.DogIdbox.Size = new System.Drawing.Size(98, 21);
+            this.DogIdbox.TabIndex = 112;
+            this.DogIdbox.SelectionChangeCommitted += new System.EventHandler(this.DogIdbox_SelectionChangeCommitted);
             // 
-            // dataGridView1
+            // BreedGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(209, 309);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(502, 134);
-            this.dataGridView1.TabIndex = 110;
+            this.BreedGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BreedGridView.Location = new System.Drawing.Point(209, 309);
+            this.BreedGridView.Name = "BreedGridView";
+            this.BreedGridView.Size = new System.Drawing.Size(502, 134);
+            this.BreedGridView.TabIndex = 110;
             // 
             // label13
             // 
@@ -268,9 +275,9 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(366, 32);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(127, 26);
+            this.label13.Size = new System.Drawing.Size(145, 26);
             this.label13.TabIndex = 111;
-            this.label13.Text = "Dash Board";
+            this.label13.Text = "Dog Breeding";
             // 
             // label7
             // 
@@ -283,12 +290,12 @@
             this.label7.TabIndex = 109;
             this.label7.Text = "Dog List";
             // 
-            // textBox6
+            // DogNameTxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(543, 90);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 108;
+            this.DogNameTxt.Location = new System.Drawing.Point(543, 90);
+            this.DogNameTxt.Name = "DogNameTxt";
+            this.DogNameTxt.Size = new System.Drawing.Size(100, 20);
+            this.DogNameTxt.TabIndex = 108;
             // 
             // label6
             // 
@@ -394,23 +401,24 @@
             this.label8.Text = "Dog";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // dateTimePicker2
+            // PregDateTxt
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(266, 155);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(95, 20);
-            this.dateTimePicker2.TabIndex = 113;
+            this.PregDateTxt.CustomFormat = "yyyy-MM-dd";
+            this.PregDateTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.PregDateTxt.Location = new System.Drawing.Point(266, 155);
+            this.PregDateTxt.Name = "PregDateTxt";
+            this.PregDateTxt.Size = new System.Drawing.Size(95, 20);
+            this.PregDateTxt.TabIndex = 113;
             // 
-            // label5
+            // DateBorned
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(418, 128);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 13);
-            this.label5.TabIndex = 106;
-            this.label5.Text = "Date Calved";
+            this.DateBorned.AutoSize = true;
+            this.DateBorned.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateBorned.Location = new System.Drawing.Point(418, 128);
+            this.DateBorned.Name = "DateBorned";
+            this.DateBorned.Size = new System.Drawing.Size(78, 13);
+            this.DateBorned.TabIndex = 106;
+            this.DateBorned.Text = "Date Borned";
             // 
             // label3
             // 
@@ -476,20 +484,20 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.RemarksTxt);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.dateTimePicker4);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DogAgeTxt);
+            this.Controls.Add(this.BreedDateTxt);
+            this.Controls.Add(this.DateBornedTxt);
+            this.Controls.Add(this.DogIdbox);
+            this.Controls.Add(this.BreedGridView);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.DogNameTxt);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.PregDateTxt);
+            this.Controls.Add(this.DateBorned);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -503,7 +511,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BreedGridView)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -527,23 +535,23 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox RemarksTxt;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.TextBox DogAgeTxt;
+        private System.Windows.Forms.DateTimePicker BreedDateTxt;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DateTimePicker DateBornedTxt;
+        private System.Windows.Forms.ComboBox DogIdbox;
+        private System.Windows.Forms.DataGridView BreedGridView;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox DogNameTxt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -554,8 +562,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker PregDateTxt;
+        private System.Windows.Forms.Label DateBorned;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
