@@ -200,6 +200,7 @@
             // 
             // DogAgeTxt
             // 
+            this.DogAgeTxt.Enabled = false;
             this.DogAgeTxt.Location = new System.Drawing.Point(543, 155);
             this.DogAgeTxt.Name = "DogAgeTxt";
             this.DogAgeTxt.Size = new System.Drawing.Size(100, 20);
@@ -237,7 +238,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(75, 8);
+            this.label11.Location = new System.Drawing.Point(92, 7);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(52, 26);
             this.label11.TabIndex = 21;
@@ -266,8 +267,10 @@
             this.BreedGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BreedGridView.Location = new System.Drawing.Point(209, 309);
             this.BreedGridView.Name = "BreedGridView";
+            this.BreedGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.BreedGridView.Size = new System.Drawing.Size(502, 134);
             this.BreedGridView.TabIndex = 110;
+            this.BreedGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BreedGridView_CellContentClick);
             // 
             // label13
             // 
@@ -292,6 +295,7 @@
             // 
             // DogNameTxt
             // 
+            this.DogNameTxt.Enabled = false;
             this.DogNameTxt.Location = new System.Drawing.Point(543, 90);
             this.DogNameTxt.Name = "DogNameTxt";
             this.DogNameTxt.Size = new System.Drawing.Size(100, 20);
@@ -309,9 +313,10 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.label10);
+            this.panel5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel5.Location = new System.Drawing.Point(1, 217);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(188, 42);
@@ -331,7 +336,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label10.Location = new System.Drawing.Point(64, 9);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(99, 26);

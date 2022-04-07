@@ -16,18 +16,20 @@ namespace WindowsFormsApp1
         public Breed()
         {
             InitializeComponent();
-            FillDogId();
-            
+            FillDogId();            
             showListBreed();
         }
-        #region
-        #endregion
+        
 
         #region khai bao bien
+
         int key = 0;
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-SCBOTSE\SQLEXPRESS;Initial Catalog=QLGC;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(
+            @"Data Source=DESKTOP-SCBOTSE\SQLEXPRESS;Initial Catalog=QLGC;Integrated Security=True");
+        
         #endregion
-        #region su kien click
+
+        #region su kien click chuyen form
         private void label8_Click(object sender, EventArgs e)
         {
             Dogs dogs = new Dogs();
@@ -51,11 +53,11 @@ namespace WindowsFormsApp1
         }
         #endregion
 
-
+        #region su kien click btn
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (DogNameTxt.Text == ""|| BreedDateTxt.Text == ""|| DogIdbox.SelectedIndex == -1|| PregDateTxt.Text == ""|| DateBornedTxt.Text == ""|| DogAgeTxt.Text == "")
+            if (DogNameTxt.Text == ""|| DogIdbox.SelectedIndex == -1|| DogAgeTxt.Text == ""||RemarksTxt.Text=="")
             {
                 MessageBox.Show("Chua dien day du thong tin");
             }
@@ -67,7 +69,7 @@ namespace WindowsFormsApp1
                     DateTime date = Convert.ToDateTime(BreedDateTxt.Value);
                     DateTime date2 = Convert.ToDateTime(PregDateTxt.Value);
                     DateTime date3 = Convert.ToDateTime(DateBornedTxt.Value);
-                    string Query = "insert into Breeding  values('"+ date.ToString("MM-dd-yyyy") + "', '"+DogIdbox.SelectedIndex.ToString()+"','"+DogNameTxt.Text+"' , '"+ date2.ToString("MM-dd-yyyy")+"','"+ date3.ToString("MM-dd-yyyy") + "' , '"+DogAgeTxt.Text+"','"+RemarksTxt.Text+"')";
+                    string Query = "insert into Breeding  values('"+ date.ToString("MM-dd-yyyy") + "', "+DogIdbox.SelectedValue.ToString()+",'"+DogNameTxt.Text+"' , '"+ date2.ToString("MM-dd-yyyy")+"','"+ date3.ToString("MM-dd-yyyy") + "' , '"+DogAgeTxt.Text+"','"+RemarksTxt.Text+"')";
                     SqlCommand cmd = new SqlCommand(Query, conn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Thanhcong");
@@ -82,9 +84,77 @@ namespace WindowsFormsApp1
                 }
             }
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Chon mot chu cho de xoa");
+            }
+            else
+            {
+                try
+                {
+                    conn.Open();
+                    string Query = "delete from Breeding where BreedId =" + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, conn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Thanh cong");
+                    conn.Close();
 
+                    showListBreed();
+                    clearTxt();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            clearTxt();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (DogNameTxt.Text == ""|| DogIdbox.SelectedIndex == -1|| DogAgeTxt.Text == ""||RemarksTxt.Text=="")
+            {
+                MessageBox.Show("Chua dien day du thong tin");
+            }
+            else
+            {
+                try
+                {
+                    conn.Open();
+                    DateTime date = Convert.ToDateTime(BreedDateTxt.Value);
+                    DateTime date2 = Convert.ToDateTime(PregDateTxt.Value);
+                    DateTime date3 = Convert.ToDateTime(DateBornedTxt.Value);
+                    string Query = "update Breeding  set BreedDate= '" + date.ToString("MM-dd-yyyy") + "' ,DogId="+DogIdbox.SelectedValue.ToString()+",DogName= '"+DogNameTxt.Text+"',PregDate= '"+date2.ToString("MM-dd-yyyy")+"',DateBorned= '"+date3.ToString("MM-dd-yyyy")+"',DogAge= '"+DogAgeTxt.Text+"',Remarks= '"+RemarksTxt.Text+"'  where BreedId =" + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, conn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Thanh cong");
+                    conn.Close();
+
+                    showListBreed();
+                    clearTxt();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        #endregion
+
+        #region cac phuong thuc
         private void clearTxt()
         {
+            DogNameTxt.Text = "";
+            DogAgeTxt.Text = "";
+            RemarksTxt.Text ="";
+            key = 0;
 
         }
 
@@ -129,47 +199,41 @@ namespace WindowsFormsApp1
             }
             conn.Close();
         }
-    
+        #endregion
+
+        #region cac su kien properties
+        private void BreedGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            BreedDateTxt.Text = BreedGridView.SelectedRows[0].Cells[1].Value.ToString();
+            DogIdbox.SelectedValue = BreedGridView.SelectedRows[0].Cells[2].Value.ToString();
+            DogNameTxt.Text = BreedGridView.SelectedRows[0].Cells[3].Value.ToString();
+            PregDateTxt.Text   = BreedGridView.SelectedRows[0].Cells[4].Value.ToString();
+            DateBornedTxt.Text    = BreedGridView.SelectedRows[0].Cells[5].Value.ToString();
+            DogAgeTxt.Text    = BreedGridView.SelectedRows[0].Cells[6].Value.ToString();
+            RemarksTxt.Text     = BreedGridView.SelectedRows[0].Cells[7].Value.ToString();
+
+            if (DogNameTxt.Text == "")
+            {
+                key = 0;
+
+            }
+            else
+            {
+                key = Convert.ToInt32(BreedGridView.SelectedRows[0].Cells[0].Value.ToString());
+
+            }
+
+           
+        }
         private void DogIdbox_SelectionChangeCommitted(object sender, EventArgs e)
         {
             GetDogInfo();
         }
+        #endregion
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (key == 0)
-            {
-                MessageBox.Show("Chon mot chu cho de xoa");
-            }
-            else
-            {
-                try
-                {
-                    conn.Open();
-                    string Query = "delete from Dog where DogId =" + key + ";";
-                    SqlCommand cmd = new SqlCommand(Query, conn);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Thanh cong");
-                    conn.Close();
 
-                    showListBreed();
-                    clearTxt();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-        }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
