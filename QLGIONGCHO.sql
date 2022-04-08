@@ -42,3 +42,14 @@ Create table [dbo].[Breeding]
 
 
 )
+go
+Create table [dbo].[Dog]
+(
+	DogId INT NOT NULL PRIMARY KEY IDENTITY(100,1),
+	DogName VARCHAR(50) NOT NULL ,
+	Color VARCHAR(50) NOT NULL ,
+	Breed VARCHAR(50) NOT NULL ,
+	Age INT NOT NULL ,
+	Wei INT NOT NULL ,
+
+)

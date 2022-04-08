@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,9 +16,14 @@ namespace WindowsFormsApp1
         public Dashboard()
         {
             InitializeComponent();
+            CountAll();
+            CountEmp();
+            CountBreeding();
+            CountHealth();
         }
-
-
+        SqlConnection conn = new SqlConnection(
+           @"Data Source=DESKTOP-SCBOTSE\SQLEXPRESS;Initial Catalog=QLGC;Integrated Security=True");
+        #region chuyen form
         private void label8_Click(object sender, EventArgs e)
         {
 
@@ -40,5 +46,57 @@ namespace WindowsFormsApp1
             breeding.Show();
             this.Hide();
         }
+        #endregion
+
+        #region su kien count
+        private void CountAll()
+        {
+            conn.Open();
+
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from Dog", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            DogCountTxt.Text = dt.Rows[0][0].ToString();
+
+
+
+            conn.Close();
+
+        }
+        private void CountEmp()
+        {
+            conn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from Employee", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            EmployeeTxt.Text = dt.Rows[0][0].ToString();
+            conn.Close();
+
+        }
+        private void CountHealth()
+        {
+            conn.Open();
+
+            SqlDataAdapter sda2 = new SqlDataAdapter("select Count(*) from Health", conn);
+            DataTable dt2 = new DataTable();
+            sda2.Fill(dt2);
+            Health.Text = dt2.Rows[0][0].ToString();
+
+            conn.Close();
+
+        }
+        private void CountBreeding()
+        {
+            conn.Open();
+
+            SqlDataAdapter sda1 = new SqlDataAdapter("select Count(*) from Breeding", conn);
+            DataTable dt1 = new DataTable();
+            sda1.Fill(dt1);
+            BreedingTxt.Text = dt1.Rows[0][0].ToString();
+            conn.Close();
+
+        }
+        #endregion
+
     }
 }
