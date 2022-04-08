@@ -18,8 +18,52 @@ namespace WindowsFormsApp1
             InitializeComponent();
             showList();
         }
+        #region
+        #endregion
+
+        #region khai bao bien
         int key = 0;
         SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-SCBOTSE\SQLEXPRESS;Initial Catalog=QLGC;Integrated Security=True");
+        #endregion
+
+
+        #region Chuyen form
+        private void label10_Click(object sender, EventArgs e)
+        {
+            Breed breeding = new Breed();
+            breeding.Show();
+            this.Hide();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            Employee emp = new Employee();
+            emp.Show();
+            this.Hide();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            Dashboard dsh = new Dashboard();
+            dsh.Show();
+            this.Hide();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            Dogs dogs = new Dogs();
+
+            dogs.Show();
+            this.Hide();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            Health health = new Health();
+            health.Show();
+            this.Hide();
+        }
+        #endregion
 
         private void showList()
         {
@@ -42,7 +86,7 @@ namespace WindowsFormsApp1
             PhoneTxt.Text = "";
             AddressTxt.Text = "";
             comboBoxGender.SelectedIndex = -1;
-          
+            Passwordtxt.Text= "";
             key = 0;
 
         }
@@ -50,7 +94,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (comboBoxGender.SelectedIndex == -1|| NameTxt.Text == "" || PhoneTxt.Text == ""|| AddressTxt.Text == "")
+            if (comboBoxGender.SelectedIndex == -1|| NameTxt.Text == "" || PhoneTxt.Text == ""|| AddressTxt.Text == ""||Passwordtxt.Text=="")
             {
                 MessageBox.Show("Chua dien day du thong tin");
             }
@@ -61,7 +105,7 @@ namespace WindowsFormsApp1
                     conn.Open();
 
                     DateTime date = Convert.ToDateTime(DOBTxt.Value);
-                    string Query = "insert into Employee  values('"+NameTxt.Text+"','"+date.ToString("MM-dd-yyyy")+"' , '"+comboBoxGender.Text+"','"+PhoneTxt.Text+ "' , '"+AddressTxt.Text+"')";
+                    string Query = "insert into Employee  values('"+NameTxt.Text+"','"+date.ToString("MM-dd-yyyy")+"' , '"+comboBoxGender.Text+"','"+PhoneTxt.Text+ "' , '"+AddressTxt.Text+"', '"+Passwordtxt.Text+"')";
                     SqlCommand cmd = new SqlCommand(Query, conn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Thanh cong");
@@ -90,6 +134,7 @@ namespace WindowsFormsApp1
             comboBoxGender.SelectedItem     = EmpDGView.SelectedRows[0].Cells[3].Value.ToString();
             PhoneTxt.Text                   = EmpDGView.SelectedRows[0].Cells[4].Value.ToString();
             AddressTxt.Text                 = EmpDGView.SelectedRows[0].Cells[5].Value.ToString();
+            Passwordtxt.Text                = EmpDGView.SelectedRows[0].Cells[6].Value.ToString();
             if (NameTxt.Text == "")
             {
                 key = 0;
@@ -132,7 +177,7 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
 
-            if (comboBoxGender.SelectedIndex == -1|| NameTxt.Text == "" || PhoneTxt.Text == ""|| AddressTxt.Text == "")
+            if (comboBoxGender.SelectedIndex == -1|| NameTxt.Text == "" || PhoneTxt.Text == ""|| AddressTxt.Text == ""||Passwordtxt.Text=="")
             {
                 MessageBox.Show("Chua dien day du thong tin");
             }
@@ -142,7 +187,7 @@ namespace WindowsFormsApp1
                 {
                     conn.Open();
                     DateTime date = Convert.ToDateTime(DOBTxt.Value);
-                    string Query = "update Employee  set EmpName='"+NameTxt+ "' ,EmpDob= '"+date.ToString("MM-dd-yyyy")+"',Gender= '"+comboBoxGender.SelectedItem+"',Phone= '"+PhoneTxt.Text+"',Address= '"+AddressTxt.Text+"'  where EmptId =" + key + ";";
+                    string Query = "update Employee  set EmpName='"+NameTxt+ "' ,EmpDob= '"+date.ToString("MM-dd-yyyy")+"',Gender= '"+comboBoxGender.SelectedItem+"',Phone= '"+PhoneTxt.Text+"',Address= '"+AddressTxt.Text+"' ,EmpPass= '"+Passwordtxt.Text+"' where EmptId =" + key + ";";
                     SqlCommand cmd = new SqlCommand(Query, conn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Thanh cong");
@@ -156,6 +201,17 @@ namespace WindowsFormsApp1
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
         }
     }
 }

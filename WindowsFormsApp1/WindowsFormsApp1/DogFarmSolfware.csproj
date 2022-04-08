@@ -70,6 +70,12 @@
     <Compile Include="Employee.Designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Health.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Health.resx">
       <DependentUpon>Health.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +119,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -123,6 +133,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PinClipart.com_healthy-heart-clip-art_5414358.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PinClipart.com_exit-clipart_44181.png" />
+    <None Include="Resources\PinClipart.com_stamp-of-approval-clipart_1175605.png" />
+    <None Include="Resources\PinClipart.com_fathers-day-clip-art_5499509.png" />
+    <None Include="Resources\PinClipart.com_employees-clip-art_4951044.png" />
+    <None Include="Resources\PinClipart.com_april-showers-bring-may_1528156.png" />
+    <Content Include="Resources\PinClipart.com_dog-bone-clipart_5292149.png" />
+    <None Include="Resources\PinClipart.com_dog-bone-clipart_52921491.png" />
+    <Content Include="Resources\PinClipart.com_scottie-dog-clipart_5767400.png" />
+    <None Include="Resources\PinClipart.com_scottie-dog-clipart_57674001.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

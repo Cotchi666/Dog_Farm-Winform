@@ -11,7 +11,8 @@ Create table [dbo].[Employee]
 	EmpDob Date NOT NULL ,
 	Gender VARCHAR(50) NOT NULL ,
 	Phone VARCHAR(50) NOT NULL ,
-	Address VARCHAR(50) NOT NULL ,
+	[Address] VARCHAR(50) NOT NULL ,
+	EmpPass VARCHAR(50) NOT NULL,
 )
 go
 

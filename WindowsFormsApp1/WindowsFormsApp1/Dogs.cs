@@ -24,36 +24,8 @@ namespace WindowsFormsApp1
         int key = 0;
         SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-SCBOTSE\SQLEXPRESS;Initial Catalog=QLGC;Integrated Security=True");
         #endregion
-
-       
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if(DogNameTxt.Text == ""|| ColorTxt.Text == ""|| BreedTxt.Text == ""|| WeightTxt.Text == ""|| AgeTxt.Text == "")
-            {
-                MessageBox.Show("Chua dien day du thong tin");
-            }
-            else
-            {
-                try
-                {
-                    conn.Open();
-                    string Query = "insert into Dog values('"+DogNameTxt.Text+"','"+ColorTxt.Text+"','"+BreedTxt.Text+"','"+AgeTxt.Text+"','"+WeightTxt.Text+"') ";
-                    SqlCommand cmd = new SqlCommand(Query, conn);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Thanhcong");                
-                    conn.Close();
-
-                    showListDog();
-                    clearTxt();
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-        }
         #region cac phuoc thuc chuyen form
-        private void label8_Click(object sender, EventArgs e)
+        private void label8_Click_1(object sender, EventArgs e)
         {
             Dogs dogs = new Dogs();
 
@@ -61,14 +33,21 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void label9_Click_1(object sender, EventArgs e)
         {
             Health health = new Health();
             health.Show();
             this.Hide();
+
         }
 
-        private void label12_Click(object sender, EventArgs e)
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+            Application.Exit();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
             Breed breeding = new Breed();
@@ -76,8 +55,25 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+            Employee emp = new Employee();
+            emp.Show();
+            this.Hide();
+        }
+
+        private void label12_Click_1(object sender, EventArgs e)
+        {
+            Dashboard dsh = new Dashboard();
+            dsh.Show();
+            this.Hide();
+
+        }
+
         #endregion
         #region cac phuoc thuc 
+
         private void clearTxt()
         {
 
@@ -102,48 +98,36 @@ namespace WindowsFormsApp1
         }
         #endregion
         #region cac su kien click
-
-        #endregion
-        private void DOBTxt_ValueChanged(object sender, EventArgs e)
-        {
-            age = Convert.ToInt32((DateTime.Today.Date-DOBTxt.Value.Date).Days)/365;
-        }
-
-        private void DOBTxt_MouseLeave(object sender, EventArgs e)
-        {
-            age = Convert.ToInt32((DateTime.Today.Date-DOBTxt.Value.Date).Days)/365;
-            AgeTxt.Text ="" + age;
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             clearTxt();
         }
-     
-        private void DogDGView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-           
-            DogNameTxt.Text = DogDGView.SelectedRows[0].Cells[1].Value.ToString();
-            ColorTxt.Text   = DogDGView.SelectedRows[0].Cells[2].Value.ToString();
-            BreedTxt.Text   = DogDGView.SelectedRows[0].Cells[3].Value.ToString();
-            AgeTxt.Text     = DogDGView.SelectedRows[0].Cells[4].Value.ToString();
-            WeightTxt.Text  = DogDGView.SelectedRows[0].Cells[5].Value.ToString();
-            if(DogNameTxt.Text == "")
+            if (DogNameTxt.Text == ""|| ColorTxt.Text == ""|| BreedTxt.Text == ""|| WeightTxt.Text == ""|| AgeTxt.Text == "")
             {
-                key = 0;
-                age = 0;
+                MessageBox.Show("Chua dien day du thong tin");
             }
             else
             {
-                key = Convert.ToInt32(DogDGView.SelectedRows[0].Cells[0].Value.ToString());
-                age = Convert.ToInt32(DogDGView.SelectedRows[0].Cells[5].Value.ToString());
+                try
+                {
+                    conn.Open();
+                    string Query = "insert into Dog values('"+DogNameTxt.Text+"','"+ColorTxt.Text+"','"+BreedTxt.Text+"','"+AgeTxt.Text+"','"+WeightTxt.Text+"') ";
+                    SqlCommand cmd = new SqlCommand(Query, conn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Thanhcong");
+                    conn.Close();
+
+                    showListDog();
+                    clearTxt();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-
-           
-            
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             if (key == 0)
@@ -196,6 +180,69 @@ namespace WindowsFormsApp1
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+
+        private void DOBTxt_ValueChanged(object sender, EventArgs e)
+        {
+            age = Convert.ToInt32((DateTime.Today.Date-DOBTxt.Value.Date).Days)/365;
+        }
+
+        private void DOBTxt_MouseLeave(object sender, EventArgs e)
+        {
+            age = Convert.ToInt32((DateTime.Today.Date-DOBTxt.Value.Date).Days)/365;
+            AgeTxt.Text ="" + age;
+
+        }
+
+
+
+        private void DogDGView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            DogNameTxt.Text = DogDGView.SelectedRows[0].Cells[1].Value.ToString();
+            ColorTxt.Text   = DogDGView.SelectedRows[0].Cells[2].Value.ToString();
+            BreedTxt.Text   = DogDGView.SelectedRows[0].Cells[3].Value.ToString();
+            AgeTxt.Text     = DogDGView.SelectedRows[0].Cells[4].Value.ToString();
+            WeightTxt.Text  = DogDGView.SelectedRows[0].Cells[5].Value.ToString();
+            if (DogNameTxt.Text == "")
+            {
+                key = 0;
+                age = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(DogDGView.SelectedRows[0].Cells[0].Value.ToString());
+                age = Convert.ToInt32(DogDGView.SelectedRows[0].Cells[5].Value.ToString());
+            }
+
+
+
+        }
+
+        #endregion
+
+        private void SearchDog()
+        {
+            conn.Open();
+            string Query = "select *from Dog Where Breed like '%"+ DogSearchTxt.Text+"%'";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, conn);
+            SqlCommandBuilder buider = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            DogDGView.DataSource = ds.Tables[0];
+            conn.Close();
+        }
+
+        private void DogSearchTxt_TextChanged(object sender, EventArgs e)
+        {
+            SearchDog();
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
         }
     }
 }

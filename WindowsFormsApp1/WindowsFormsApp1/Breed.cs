@@ -26,11 +26,11 @@ namespace WindowsFormsApp1
         int key = 0;
         SqlConnection conn = new SqlConnection(
             @"Data Source=DESKTOP-SCBOTSE\SQLEXPRESS;Initial Catalog=QLGC;Integrated Security=True");
-        
+
         #endregion
 
         #region su kien click chuyen form
-        private void label8_Click(object sender, EventArgs e)
+        private void label8_Click_1(object sender, EventArgs e)
         {
             Dogs dogs = new Dogs();
 
@@ -38,17 +38,30 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-            Health health = new Health();
-            health.Show();
-            this.Hide();
-        }
 
         private void label10_Click(object sender, EventArgs e)
         {
             Breed breeding = new Breed();
             breeding.Show();
+            this.Hide();
+        }
+        private void label9_Click_1(object sender, EventArgs e)
+        {
+            Health health = new Health();
+            health.Show();
+            this.Hide();
+
+        }
+        private void label11_Click(object sender, EventArgs e)
+        {
+            Employee emp = new Employee();
+            emp.Show();
+            this.Hide();
+        }
+        private void label12_Click(object sender, EventArgs e)
+        {
+            Dashboard dsh = new Dashboard();
+            dsh.Show();
             this.Hide();
         }
         #endregion
@@ -230,10 +243,22 @@ namespace WindowsFormsApp1
         {
             GetDogInfo();
         }
+
+
+
         #endregion
 
+   
 
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
 
+        }
     }
 }
