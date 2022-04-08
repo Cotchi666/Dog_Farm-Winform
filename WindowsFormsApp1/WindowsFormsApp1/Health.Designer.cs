@@ -55,6 +55,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.ReportDate = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -71,7 +72,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.HealthGView)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -143,7 +143,7 @@
             // 
             // VetTxt
             // 
-            this.VetTxt.Location = new System.Drawing.Point(480, 164);
+            this.VetTxt.Location = new System.Drawing.Point(462, 165);
             this.VetTxt.Name = "VetTxt";
             this.VetTxt.Size = new System.Drawing.Size(100, 20);
             this.VetTxt.TabIndex = 66;
@@ -161,11 +161,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(367, 268);
+            this.label7.Location = new System.Drawing.Point(400, 269);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 26);
+            this.label7.Size = new System.Drawing.Size(101, 26);
             this.label7.TabIndex = 64;
-            this.label7.Text = "Health Report";
+            this.label7.Text = "Thông tin";
             // 
             // label13
             // 
@@ -173,9 +173,9 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(367, 31);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(146, 26);
+            this.label13.Size = new System.Drawing.Size(201, 26);
             this.label13.TabIndex = 63;
-            this.label13.Text = "Health Report";
+            this.label13.Text = "Tình trạng sức khỏe";
             // 
             // HealthGView
             // 
@@ -203,7 +203,7 @@
             // 
             // CostTxt
             // 
-            this.CostTxt.Location = new System.Drawing.Point(341, 167);
+            this.CostTxt.Location = new System.Drawing.Point(341, 164);
             this.CostTxt.Name = "CostTxt";
             this.CostTxt.Size = new System.Drawing.Size(100, 20);
             this.CostTxt.TabIndex = 59;
@@ -218,47 +218,52 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(495, 143);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(479, 144);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.Size = new System.Drawing.Size(70, 13);
             this.label6.TabIndex = 57;
-            this.label6.Text = "Vet Name";
+            this.label6.Text = "Tên bác sỹ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(348, 143);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(360, 144);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 13);
+            this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 56;
-            this.label5.Text = "Cost Of Treatment";
+            this.label5.Text = "Chi phí ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(614, 62);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(605, 72);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 55;
-            this.label4.Text = "Event";
+            this.label4.Text = "Nguyên nhân";
             // 
             // DiaTxt
             // 
             this.DiaTxt.AutoSize = true;
+            this.DiaTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DiaTxt.Location = new System.Drawing.Point(479, 72);
             this.DiaTxt.Name = "DiaTxt";
-            this.DiaTxt.Size = new System.Drawing.Size(53, 13);
+            this.DiaTxt.Size = new System.Drawing.Size(76, 13);
             this.DiaTxt.TabIndex = 54;
-            this.DiaTxt.Text = "Diagnosis";
+            this.DiaTxt.Text = "Chuẩn đoán";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(235, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 52;
-            this.label1.Text = "Dog ID";
+            this.label1.Text = "ID Chó";
             // 
             // panel1
             // 
@@ -283,25 +288,26 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(372, 72);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(357, 72);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 53;
-            this.label2.Text = "Dog Name";
+            this.label2.Text = "Tên chó";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(614, 152);
+            this.label14.Location = new System.Drawing.Point(596, 144);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 13);
+            this.label14.Size = new System.Drawing.Size(89, 13);
             this.label14.TabIndex = 114;
-            this.label14.Text = "Report Date";
+            this.label14.Text = "Ngày khai báo";
             // 
             // TreatTxt
             // 
-            this.TreatTxt.Location = new System.Drawing.Point(216, 172);
+            this.TreatTxt.Location = new System.Drawing.Point(216, 164);
             this.TreatTxt.Name = "TreatTxt";
             this.TreatTxt.Size = new System.Drawing.Size(100, 20);
             this.TreatTxt.TabIndex = 117;
@@ -309,17 +315,18 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(223, 148);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(235, 144);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(55, 13);
+            this.label15.Size = new System.Drawing.Size(64, 13);
             this.label15.TabIndex = 116;
-            this.label15.Text = "Treatment";
+            this.label15.Text = "Biện pháp";
             // 
             // ReportDate
             // 
             this.ReportDate.CustomFormat = "yyyy-MM-dd";
             this.ReportDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.ReportDate.Location = new System.Drawing.Point(595, 167);
+            this.ReportDate.Location = new System.Drawing.Point(590, 164);
             this.ReportDate.Name = "ReportDate";
             this.ReportDate.Size = new System.Drawing.Size(95, 20);
             this.ReportDate.TabIndex = 115;
@@ -338,6 +345,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(189, 453);
             this.panel2.TabIndex = 118;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(69, 383);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 18);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "EXIT";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel7
             // 
@@ -505,18 +524,6 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "Dog";
             this.label8.Click += new System.EventHandler(this.label8_Click_1);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(69, 383);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 18);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "EXIT";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Health
             // 

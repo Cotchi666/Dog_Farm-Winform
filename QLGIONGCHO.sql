@@ -1,7 +1,7 @@
-create database QLGIONGCHO
+create database QLGC
 go
 
-use QLGIONGCHO
+use QLGC
 Go
 
 Create table [dbo].[Employee]

@@ -26,7 +26,7 @@ namespace DogFarm
             {
                 Myprogress.Value = 0;
                 timer1.Stop();
-                Login lg = new Login();
+                Dogs lg = new Dogs();
                 this.Hide();
                 lg.Show();
             }

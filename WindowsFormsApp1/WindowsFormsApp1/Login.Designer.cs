@@ -45,11 +45,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(322, 381);
+            this.label4.Location = new System.Drawing.Point(322, 377);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 18);
+            this.label4.Size = new System.Drawing.Size(41, 18);
             this.label4.TabIndex = 20;
-            this.label4.Text = "Reset";
+            this.label4.Text = "reset";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // roletxt
@@ -62,7 +62,7 @@
             this.roletxt.Name = "roletxt";
             this.roletxt.Size = new System.Drawing.Size(121, 21);
             this.roletxt.TabIndex = 19;
-            this.roletxt.Text = "Select Role";
+            this.roletxt.Text = "Chọn vai trò";
             // 
             // button1
             // 
@@ -74,7 +74,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 30);
             this.button1.TabIndex = 18;
-            this.button1.Text = "Login";
+            this.button1.Text = "Đăng nhập";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -116,11 +116,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(238, 26);
+            this.label1.Location = new System.Drawing.Point(202, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 26);
+            this.label1.Size = new System.Drawing.Size(289, 26);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Dog Farm Software";
+            this.label1.Text = "Phần mềm quản lí giống chó";
             // 
             // panel1
             // 
