@@ -98,7 +98,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(61, 26);
             this.button4.TabIndex = 70;
-            this.button4.Text = "Clear";
+            this.button4.Text = "Làm mới";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -111,7 +111,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(61, 26);
             this.button3.TabIndex = 69;
-            this.button3.Text = "Delete";
+            this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -124,7 +124,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(61, 26);
             this.button2.TabIndex = 68;
-            this.button2.Text = "Edit";
+            this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -133,11 +133,12 @@
             this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(318, 225);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 26);
             this.button1.TabIndex = 67;
-            this.button1.Text = "Save";
+            this.button1.Text = "Tạo";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -160,6 +161,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(400, 269);
             this.label7.Name = "label7";
@@ -170,12 +172,13 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(367, 31);
+            this.label13.BackColor = System.Drawing.Color.White;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(336, 31);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(201, 26);
+            this.label13.Size = new System.Drawing.Size(244, 26);
             this.label13.TabIndex = 63;
-            this.label13.Text = "Tình trạng sức khỏe";
+            this.label13.Text = "ĐIỀU TRỊ SỨC KHỎE";
             // 
             // HealthGView
             // 
@@ -259,7 +262,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(235, 71);
+            this.label1.Location = new System.Drawing.Point(244, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 52;
@@ -353,9 +356,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.label3.Location = new System.Drawing.Point(69, 383);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 18);
+            this.label3.Size = new System.Drawing.Size(46, 18);
             this.label3.TabIndex = 24;
-            this.label3.Text = "EXIT";
+            this.label3.Text = "Thoát";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel7
@@ -385,9 +388,9 @@
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label12.Location = new System.Drawing.Point(47, 9);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(118, 26);
+            this.label12.Size = new System.Drawing.Size(101, 26);
             this.label12.TabIndex = 21;
-            this.label12.Text = "Dashboard";
+            this.label12.Text = "Thống kê";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // panel6
@@ -407,7 +410,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(110, 26);
             this.label11.TabIndex = 23;
-            this.label11.Text = "Employee";
+            this.label11.Text = "Nhân viên";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // pictureBox5
@@ -447,9 +450,9 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label10.Location = new System.Drawing.Point(53, 9);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 26);
+            this.label10.Size = new System.Drawing.Size(100, 26);
             this.label10.TabIndex = 21;
-            this.label10.Text = "Breeding";
+            this.label10.Text = "Lai giống";
             this.label10.Click += new System.EventHandler(this.label10_Click_1);
             // 
             // panel4
@@ -478,9 +481,9 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(54, 8);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 26);
+            this.label9.Size = new System.Drawing.Size(103, 26);
             this.label9.TabIndex = 21;
-            this.label9.Text = "Health";
+            this.label9.Text = "Sức khỏe";
             this.label9.Click += new System.EventHandler(this.label9_Click_1);
             // 
             // pictureBox1
@@ -520,9 +523,9 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label8.Location = new System.Drawing.Point(56, 8);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 26);
+            this.label8.Size = new System.Drawing.Size(100, 26);
             this.label8.TabIndex = 21;
-            this.label8.Text = "Dog";
+            this.label8.Text = "Lai giống";
             this.label8.Click += new System.EventHandler(this.label8_Click_1);
             // 
             // Health

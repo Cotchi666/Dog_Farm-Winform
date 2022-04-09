@@ -45,11 +45,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(322, 377);
+            this.label4.Location = new System.Drawing.Point(308, 377);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 18);
+            this.label4.Size = new System.Drawing.Size(66, 18);
             this.label4.TabIndex = 20;
-            this.label4.Text = "reset";
+            this.label4.Text = "Làm mới";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // roletxt
@@ -98,9 +98,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(222, 245);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 18);
+            this.label3.Size = new System.Drawing.Size(69, 18);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Password";
+            this.label3.Text = "Mật khẩu";
             // 
             // label2
             // 
@@ -108,9 +108,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(222, 188);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 18);
+            this.label2.Size = new System.Drawing.Size(73, 18);
             this.label2.TabIndex = 14;
-            this.label2.Text = "User Name";
+            this.label2.Text = "Tài khoản";
             // 
             // label1
             // 
