@@ -1,0 +1,50 @@
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarmSolfware.csproj.AssemblyReference.cache
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarmSolfware.csproj.SuggestedBindingRedirects.cache
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Breed.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Dashboard.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Dogs.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Health.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarmSolfware.csproj.GenerateResource.cache
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarmSolfware.csproj.CoreCompileInputs.cache
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Employee.resources
+C:\Users\Chien\source\repos\ThucHanh02\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarm.Form1.resources
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarmSolfware.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Breed.resources
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Dashboard.resources
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Dogs.resources
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Employee.resources
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarm.Form1.resources
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Health.resources
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarmSolfware.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarmSolfware.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\New folder\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmAbout.resources
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarmSolfware.csproj.AssemblyReference.cache
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarmSolfware.csproj.SuggestedBindingRedirects.cache
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmAbout.resources
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Breed.resources
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Dashboard.resources
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Dogs.resources
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Employee.resources
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarm.Form1.resources
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Health.resources
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarmSolfware.csproj.GenerateResource.cache
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DogFarmSolfware.csproj.CoreCompileInputs.cache
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\CODE\Winform\sql_QULC\Dog_Farm_Winform-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
