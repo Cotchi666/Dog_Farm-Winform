@@ -189,7 +189,7 @@ namespace WindowsFormsApp1
                 {
                     conn.Open();
                     DateTime date = Convert.ToDateTime(DOBTxt.Value);
-                    string Query = "update Employee  set EmpName=N'"+NameTxt+ "' ,EmpDob= '"+date.ToString("MM-dd-yyyy")+"',Gender= N'"+comboBoxGender.SelectedItem.ToString()+"',Phone= '"+PhoneTxt.Text+"',Address= N'"+AddressTxt.Text+ "' where EmpId =" + key + ";";
+                    string Query = "update Employee  set EmpName=N'"+NameTxt.Text+ "' ,EmpDob= '"+date.ToString("MM-dd-yyyy")+"',Gender= N'"+comboBoxGender.SelectedItem.ToString()+"',Phone= '"+PhoneTxt.Text+"',Address= N'"+AddressTxt.Text+ "' where EmpId =" + key + ";";
                     SqlCommand cmd = new SqlCommand(Query, conn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Thanh cong");
